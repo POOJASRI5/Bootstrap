@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%; /*smaller size ah irundha 90% occupy pannanum*/
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        
+        }
+        .item{
+              flex: 1 1 200px;/*flex-grow should be equal on sides 1 when grows , flex-shrink ,flex-basis set 200px as base size grow or shrink after you cross this limit*/
+              padding: 20px;
+              background-color: cadetblue;
+              text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+</body>
+</html>
